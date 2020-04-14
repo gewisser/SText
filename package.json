@@ -1,0 +1,60 @@
+{
+  "name": "stext",
+  "version": "1.0.0",
+  "description": "Курсовая работа: Тема: Разработать программу «Поиск». Программа должна осуществлять поиск заданных слов в текстовом файле. Слова последовательно вводятся с клавиатуры. Для каждого слова должно оп-ределяться количество вхождений и номера строк текста. Если указанное слово в файле отсутствует, то программа должна выводить соответствующее сообщение",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dev": "webpack --mode=development --config webpack.dev.js --progress",
+    "build": "webpack --config webpack.prod.js --env.F --mode=production --progress --hide-modules",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "roman.gavrilow.ru.stext",
+    "icon": "app/mainicon.png",
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    }
+  },
+  "author": "roman@gavrilow.ru",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-prismjs": "^2.0.1",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.5.1",
+    "electron": "^8.2.1",
+    "electron-builder": "^22.4.1",
+    "html-webpack-plugin": "^4.0.4",
+    "mini-css-extract-plugin": "^0.9.0",
+    "null-loader": "^3.0.0",
+    "prismjs": "^1.20.0",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "vue": "^2.6.11",
+    "vue-loader": "^15.9.1",
+    "vue-template-compiler": "^2.6.11",
+    "vuex": "^3.1.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "electron-find": "^1.0.6",
+    "vue-prism-editor": "^0.5.1"
+  }
+}

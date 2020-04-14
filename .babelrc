@@ -1,0 +1,33 @@
+{
+  "plugins": [
+    [
+      "prismjs",
+      {
+        "languages": [
+          "javascript",
+          "css",
+          "markup",
+          "php",
+          "go",
+          "sql",
+          "ini",
+          "arduino",
+          "c",
+          "cpp",
+          "pug",
+          "sas",
+          "sass",
+          "scss",
+          "ts",
+          "jsx",
+          "tsx",
+          "json",
+          "md"
+        ],
+        "plugins": [
+          "line-numbers"
+        ]
+      }
+    ]
+  ]
+}
